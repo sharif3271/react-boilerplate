@@ -1,0 +1,57 @@
+{
+  "compileOnSave": true,
+  "compilerOptions": {
+    "baseUrl": ".",
+    "outDir": "./dist",
+    "module": "commonjs",
+    "target": "es5",
+    "sourceMap": true,
+    "lib": [
+      "dom",
+      "dom.iterable",
+      "esnext",
+      "es5"
+    ],
+    "allowJs": true,
+    "skipLibCheck": true,
+    "esModuleInterop": true,
+    "allowSyntheticDefaultImports": true,
+    "strict": true,
+    "forceConsistentCasingInFileNames": false,
+    "moduleResolution": "node",
+    "resolveJsonModule": true,
+    "isolatedModules": false,
+    "rootDir": ".",
+    "downlevelIteration": true,
+    "jsx": "react",
+    "noImplicitAny": false,
+    "noImplicitThis": true,
+    "strictNullChecks": true,
+    "typeRoots": [
+      "./node_modules/@types",
+      "../../node_modules/@types"
+    ],
+    "paths": {
+      "*": [
+        "node_modules/@types/*",
+        "*"
+      ],
+      "src/*": ["./src/*"],
+      "components/*": ["./src/components/*"],
+      "services/*": ["./src/services/*"],
+      "utils/*": ["./src/utils/*"],
+      "models/*": ["./src/models/*"],
+      "icons/*": ["./src/assets/icons/*"],
+      "store/*": ["./src/store/*"],
+    }
+  },
+  "include": [
+    "src",
+    "store",
+    "components",
+    "services",
+    "utils",
+    "models",
+    "src/assets/declarations.d.ts"
+  ]
+}

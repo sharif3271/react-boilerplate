@@ -1,0 +1,23 @@
+@import 'tailwindcss/base';
+@import 'tailwindcss/components';
+@import 'tailwindcss/utilities';
+
+
+@layer components {
+    .flex-center {
+      @apply flex justify-center items-center;
+    }
+    .ui-button {
+      @apply border-0.5 border-[#000] flex-center px-4 cursor-pointer rounded-[3px] py-[3px] mr-2;
+      &:hover {
+        background-color: #444;
+      }
+      &.selected {
+        background-color: #3f6da0;
+      }
+      &.disabled {
+        pointer-events: none;
+        opacity: 0.5;
+      }
+    }
+}

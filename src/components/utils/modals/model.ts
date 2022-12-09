@@ -1,0 +1,1 @@
+export type TInputData<T = any> = { value?: T; callback?: (param?: any) => void; };
